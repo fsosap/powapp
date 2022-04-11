@@ -21,13 +21,13 @@ public class ProtobootappApplication {
     //Se ejecuta con http://localhost:8080/
     @GetMapping("/")
     public String index() {
-        return String.format("Bienvenido! Esta aplicación ayuda a elevar números a sus potencias y otras características.");
+        return String.format("This is my version, my friend ;)");
     }    
 
     //Se ejecuta con http://localhost:8080/hola o http://localhost:8080/hola?nombre=John
     @GetMapping("/hola")
     public String hola(@RequestParam(value = "nombre", defaultValue = "Mundo") String nombre) {
-        return String.format("Hola %s!", nombre);
+        return String.format("Welcome doggy %s!", nombre);
     }
     
     //Se ejecuta con http://localhost:8080/cuadrado o http://localhost:8080/cuadrado?numero=5
